@@ -52,8 +52,8 @@ const Navbar = () => {
     <nav
       className={
         backgroundColor
-          ? "fixed top-0 p-5 w-screen bg-transparent transition-colors duration-500 shadow-xl z-10"
-          : "fixed top-0 p-5 w-screen bg-white transition-colors duration-500 shadow-xl z-10"
+          ? "fixed top-0 p-5 w-screen bg-transparent transition-colors duration-500 shadow-xl z-[100]"
+          : "fixed top-0 p-5 w-screen bg-white transition-colors duration-500 shadow-xl z-[100]"
       }
     >
       <div className="flex justify-between items-center">
@@ -101,21 +101,21 @@ const Navbar = () => {
               <div className="flex justify-between items-center p-5">
                 <h2>Tims Portfolio</h2>
                 <div
-                  className="shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer"
+                  className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer"
                   onClick={handleClose}
                 >
                   <AiOutlineClose size={25} />
                 </div>
               </div>
               <div className="border-b-2 w-[75%] m-4 py-4 ">
-                <p className="text-lg">
+                <p className="text-lg text-blue-500 font-bold">
                   Lets build something amazing together!
                 </p>
               </div>
               <ul className="flex flex-col items-start p-4 text-[2rem] gap-2 ">
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/"}>Home</NextLink>
-                  <a href=""></a>
+                  
                 </li>
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/#skills"}>Skills</NextLink>
@@ -130,18 +130,18 @@ const Navbar = () => {
                   <NextLink href={"/#contact"}>Contact</NextLink>
                 </li>
               </ul>
-              <div className="flex justify-center items-center gap-5 absolute bottom-0 top-[70%] left-0 right-0 ">
+              <div className="flex justify-center items-center gap-3 absolute bottom-0 top-[70%] left-0 right-0 ">
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillFacebook size={40} />
+                  <AiFillFacebook size={35} />
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillInstagram size={40} />
+                  <AiFillInstagram size={35} />
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillLinkedin size={40} />
+                  <AiFillLinkedin size={35} />
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiOutlineMail size={40} />
+                  <AiOutlineMail size={35} />
                 </div>
               </div>
             </motion.div>

@@ -8,6 +8,10 @@ import tailwindIcon from ".//../public/assets/skills/tailwind.png"
 import mongodbIcon from ".//../public/assets/skills/mongodb.png"
 import nodeIcon from ".//../public/assets/skills/nodejs.png"
 import expressIcon from ".//../public/assets/skills/expressjs.png"
+import ecommerceImage from ".//../public/assets/projects/ecommerceImage.png";
+import blogImage from ".//../public/assets/projects/blogImage.png";
+import portfolioImage from ".//../public/assets/projects/portfolioImage.png";
+import movieImage from ".//../public/assets/projects/movieImage.png";
 
 
 export const data = {
@@ -54,9 +58,10 @@ export const data = {
   projects: [
     {
       projectName: "Shop-PC",
+      projectImage: ecommerceImage,
       type: "ECommerce",
       tech: {
-        framework: "React",
+        framework: "React JS",
         database: "MongoDB",
         backend: "Node.js",
         backendFramework: "Express",
@@ -67,9 +72,10 @@ export const data = {
     },
     {
       projectName: "Eblog",
+      projectImage: blogImage,
       type: "Blog",
       tech: {
-        framework: "React",
+        framework: "React JS",
         database: "MongoDB",
         backend: "*Next.js",
         backendFramework: "*Next.js",
@@ -79,9 +85,10 @@ export const data = {
     },
     {
       projectName: "TM Portfolio",
+      projectImage: portfolioImage,
       type: "Portfolio",
       tech: {
-        framework: "React",
+        framework: "React JS",
         database: "None",
         backend: "*Next.js",
         backendFramework: "*Next.js",
@@ -91,9 +98,10 @@ export const data = {
     },
     {
       projectName: "TechFlix",
+      projectImage: movieImage,
       type: "Movie API",
       tech: {
-        framework: "React",
+        framework: "React JS",
         database: "None",
         backend: "Node.js",
         backendFramework: "Express",

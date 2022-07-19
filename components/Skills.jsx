@@ -5,8 +5,8 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-4 pt-20">
       <div className="mx-auto flex flex-col justify-center h-full">
-        <p className="uppercase tracking-widest text-gray-700">Skills</p>
-        <p className="text-4xl">What I can do...</p>
+        <p className="uppercase tracking-widest text-blue-500 font-black text-2xl">Skills</p>
+        <p className="text-4xl pb-2 text-gray-700">What I can do...</p>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {data.skills.map((skill, index) => {
             const { tech, imgUrl } = skill;
