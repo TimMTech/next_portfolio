@@ -4,6 +4,7 @@ import {
   AiFillLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
+import NextLink from "next/link"
 
 const Hero = () => {
   return (
@@ -27,16 +28,36 @@ const Hero = () => {
           </p>
           <div className="flex justify-center items-center gap-3 absolute bottom-0 top-[70%] left-0 right-0 ">
             <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-              <AiFillFacebook size={60} />
+              <a
+                href="https://www.facebook.com/tim.mukhamedov"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillFacebook size={60} />
+              </a>
             </div>
             <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-              <AiFillInstagram size={60} />
+              <a
+                href="https://www.instagram.com/forevertech93/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillInstagram size={60} />
+              </a>
             </div>
             <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-              <AiFillLinkedin size={60} />
+              <a
+                href="https://www.linkedin.com/in/timur-mukhamedov-50b3b6221/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillLinkedin size={60} />
+              </a>
             </div>
             <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-              <AiOutlineMail size={60} />
+              <NextLink href={"/#contact"}>
+                <AiOutlineMail size={60} />
+              </NextLink>
             </div>
           </div>
         </div>

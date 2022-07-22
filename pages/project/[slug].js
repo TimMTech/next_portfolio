@@ -1,7 +1,6 @@
 import { data } from "../../portfolioData/data";
 import NextImage from "next/image";
-import {FaCog} from "react-icons/fa"
-
+import { FaCog } from "react-icons/fa";
 
 const project = ({ projects }) => {
   return (
@@ -9,8 +8,10 @@ const project = ({ projects }) => {
       {projects.map((project, index) => {
         const {
           projectName,
-          type,
+          live,
+          code,
           projectImage,
+          description,
           tech: { framework, database, style, backend, backendFramework },
         } = project;
         return (
@@ -34,32 +35,32 @@ const project = ({ projects }) => {
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-5 gap-8 py-8">
               <div className="p-2 col-span-4">
                 <h2 className="text-blue-500 font-bold">Overview</h2>
-                <p className="py-4 font-semibold">
-                  Lorem ipsum dolor sit amet. Quo delectus explicabo et mollitia
-                  dolorem qui sunt beatae non autem quia id vero deserunt 33
-                  ullam necessitatibus et minus labore! Eos necessitatibus nemo
-                  ut reprehenderit iure sed dicta fugiat ut nemo impedit quo
-                  soluta facilis vel nobis quidem. Non aperiam dolores ut nulla
-                  natus ut vitae soluta aut nesciunt aperiam ea voluptatibus
-                  modi aut impedit vitae sit similique rerum? Ut molestias omnis
-                  33 itaque accusamus quo expedita consequatur sit pariatur
-                  sunt. Est illum quod est modi deserunt sit omnis laborum 33
-                  officia laboriosam ea impedit libero.
-                </p>
+                <p className="py-4 font-semibold">{description}</p>
 
-                <button className="bg-blue-500 px-8 m-3 py-2 rounded-md text-white text-lg">
+                <a
+                  className="bg-blue-500 px-8  py-2 rounded-md text-white text-lg"
+                  href={code}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Code
-                </button>
-                <button className="bg-blue-500 px-8 m-3 py-2 rounded-md text-white text-lg">
+                </a>
+
+                <a
+                  className="bg-blue-500 px-8 m-3 py-2 rounded-md text-white text-lg"
+                  href={live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live
-                </button>
+                </a>
               </div>
               <div className="col-span-4  md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 m-1">
                 <div className="p-2">
                   <p className="text-center text-xl pb-2 font-bold ">
                     Technologies
                   </p>
-                  <div className="grid grid-cols-3 md:grid-cols-1">
+                  <div className="grid grid-cols-3 md:grid-cols-1 text-lg font-semibold py-3">
                     <div className="text-gray-600 py-2 flex items-center gap-2">
                       <FaCog />
                       {framework}

@@ -21,7 +21,7 @@ const menu = {
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState(false)
+  const [backgroundColor, setBackgroundColor] = useState(false);
 
   const handleNav = () => {
     setOpenMenu(!openMenu);
@@ -57,10 +57,15 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center">
-        <h1 className="text-lg">Tims Portfolio</h1>
+        <h1 className="text-xl text-blue-500 italic font-black tracking-widest">
+          <NextLink href={"/"}>TM Portfolio</NextLink>
+        </h1>
         <ul className="gap-5 items-center hidden md:flex">
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/"}>Home</NextLink>
+          </li>
+          <li className="hover:scale-110 transition-all duration-500">
+            <NextLink href={"/#about"}>About</NextLink>
           </li>
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#skills"}>Skills</NextLink>
@@ -68,9 +73,7 @@ const Navbar = () => {
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#projects"}>Projects</NextLink>
           </li>
-          <li className="hover:scale-110 transition-all duration-500">
-            <NextLink href={"/#about"}>About</NextLink>
-          </li>
+
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#contact"}>Contact</NextLink>
           </li>
@@ -99,7 +102,9 @@ const Navbar = () => {
               className="md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white"
             >
               <div className="flex justify-between items-center p-5">
-                <h2>Tims Portfolio</h2>
+                <h1 className="text-4xl text-blue-500 italic font-black tracking-widest">
+                  TM Portfolio
+                </h1>
                 <div
                   className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer"
                   onClick={handleClose}
@@ -115,33 +120,54 @@ const Navbar = () => {
               <ul className="flex flex-col items-start p-4 text-[2rem] gap-2 ">
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/"}>Home</NextLink>
-                  
-                </li>
-                <li className="hover:scale-110 transition-all duration-500">
-                  <NextLink href={"/#skills"}>Skills</NextLink>
-                </li>
-                <li className="hover:scale-110 transition-all duration-500">
-                  <NextLink href={"/#projects"}>Projects</NextLink>
                 </li>
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/#about"}>About</NextLink>
                 </li>
+                <li className="hover:scale-110 transition-all duration-500">
+                  <NextLink href={"/#skills"}>Skills</NextLink>
+                </li>
+
+                <li className="hover:scale-110 transition-all duration-500">
+                  <NextLink href={"/#projects"}>Projects</NextLink>
+                </li>
+
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/#contact"}>Contact</NextLink>
                 </li>
               </ul>
               <div className="flex justify-center items-center gap-3 absolute bottom-0 top-[70%] left-0 right-0 ">
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillFacebook size={35} />
+                  <a
+                    href="https://www.facebook.com/tim.mukhamedov"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiFillFacebook size={35} />
+                  </a>
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillInstagram size={35} />
+                  <a
+                    href="https://www.instagram.com/forevertech93/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiFillInstagram size={35} />
+                  </a>
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiFillLinkedin size={35} />
+                  <a
+                    href="https://www.linkedin.com/in/timur-mukhamedov-50b3b6221/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiFillLinkedin size={35} />
+                  </a>
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <AiOutlineMail size={35} />
+                  <NextLink href={"/#contact"}>
+                    <AiOutlineMail size={35} />
+                  </NextLink>
                 </div>
               </div>
             </motion.div>

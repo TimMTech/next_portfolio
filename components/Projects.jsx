@@ -9,7 +9,7 @@ const Projects = () => {
         <p className="uppercase tracking-widest  text-blue-500 font-black text-2xl">
           Projects
         </p>
-        <p className="text-4xl pb-2 text-grey-700">What I have built...</p>
+        <p className="text-4xl pb-2 text-gray-700">What I have built...</p>
         <div className="grid md:grid-cols-2 gap-8">
           {data.projects.map((project, index) => {
             const {
@@ -26,6 +26,7 @@ const Projects = () => {
                   className="rounded-xl"
                   src={projectImage}
                   quality={100}
+                  
                 />
                 <div className="hover:opacity-100 absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#5651e5]/90 to-[#709dff]/90 text-white flex items-center justify-around opacity-0 transition-all duration-500 rounded-xl">
                   <div className="flex flex-col justify-center items-center">
