@@ -23,7 +23,7 @@ const Skills = () => {
                     quality={100}
                   />
                 </div>
-                <h2>{tech}</h2>
+                <h2 className="text-2xl">{tech}</h2>
               </div>
             );
           })}

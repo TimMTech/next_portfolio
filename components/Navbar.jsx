@@ -73,7 +73,6 @@ const Navbar = () => {
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#projects"}>Projects</NextLink>
           </li>
-
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#contact"}>Contact</NextLink>
           </li>
