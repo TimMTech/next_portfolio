@@ -60,7 +60,7 @@ const Navbar = () => {
         <h1 className="text-xl text-blue-500 italic font-black tracking-widest">
           <NextLink href={"/"}>TM Portfolio</NextLink>
         </h1>
-        <ul className="gap-5 items-center hidden md:flex">
+        <ul className="gap-5 items-center hidden md:flex text-gray-700">
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/"}>Home</NextLink>
           </li>
@@ -117,7 +117,7 @@ const Navbar = () => {
                   Lets build something amazing together!
                 </p>
               </div>
-              <ul className="flex flex-col items-start p-4 text-[2rem] gap-2 ">
+              <ul className="flex flex-col items-start p-4 text-[2rem] gap-2">
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/"}>Home</NextLink>
                 </li>
