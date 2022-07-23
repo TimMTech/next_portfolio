@@ -135,7 +135,7 @@ const Navbar = () => {
                   <NextLink href={"/#contact"}>Contact</NextLink>
                 </li>
               </ul>
-              <div className="flex justify-center items-center gap-3 absolute bottom-0 top-[70%] left-0 right-0 ">
+              <div className="flex justify-center items-center gap-3">
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
                   <a
                     href="https://www.facebook.com/tim.mukhamedov"
