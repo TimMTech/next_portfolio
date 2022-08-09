@@ -1,5 +1,11 @@
-const resume = () => {
-    return <div>Resume</div>
-}
+import ResumePreview from "../../components/ResumePreview";
 
-export default resume
+const resume = () => {
+  return (
+    <div className="w-full pt-20">
+      <ResumePreview />
+    </div>
+  );
+};
+
+export default resume;

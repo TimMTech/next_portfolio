@@ -5,3 +5,21 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            name: "[path][name].[ext]",
+          },
+        },
+      ],
+    });
+    return config;
+  },
+};
+

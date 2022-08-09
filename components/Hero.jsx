@@ -4,7 +4,7 @@ import {
   AiFillLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import NextLink from "next/link"
+import NextLink from "next/link";
 
 const Hero = () => {
   return (
@@ -55,9 +55,9 @@ const Hero = () => {
               </a>
             </div>
             <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-              <NextLink href={"/#contact"}>
+              <a href={"/#contact"}>
                 <AiOutlineMail size={60} />
-              </NextLink>
+              </a>
             </div>
           </div>
         </div>

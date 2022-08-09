@@ -76,6 +76,9 @@ const Navbar = () => {
           <li className="hover:scale-110 transition-all duration-500">
             <NextLink href={"/#contact"}>Contact</NextLink>
           </li>
+          <li className="hover:scale-110 transition-all duration-500">
+            <NextLink href={"/resume"}>Resume</NextLink>
+          </li>
         </ul>
         <div className="md:hidden cursor-pointer" onClick={handleNav}>
           <AiOutlineMenu size={25} />
@@ -134,6 +137,9 @@ const Navbar = () => {
                 <li className="hover:scale-110 transition-all duration-500">
                   <NextLink href={"/#contact"}>Contact</NextLink>
                 </li>
+                <li className="hover:scale-110 transition-all duration-500">
+                  <NextLink href={"/resume"}>Resume</NextLink>
+                </li>
               </ul>
               <div className="flex justify-center items-center gap-3">
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
@@ -164,9 +170,9 @@ const Navbar = () => {
                   </a>
                 </div>
                 <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
-                  <NextLink href={"/#contact"}>
-                    <AiOutlineMail size={35} />
-                  </NextLink>
+                  <AiOutlineMail size={35}>
+                    <NextLink href={"/#contact"}></NextLink>
+                  </AiOutlineMail>
                 </div>
               </div>
             </motion.div>
