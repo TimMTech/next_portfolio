@@ -15,16 +15,16 @@ const ResumePreview = () => {
   });
 
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center p-2">
       <div>
         <button
           className=" bg-blue-500 w-full py-2 px-10 text-white font-bold rounded-md"
           onClick={handlePrint}
         >
-          Print
+          Print PDF
         </button>
       </div>
-      <div className="w-full p-2">
+      <div className="w-full p-1">
         <div className="flex self-start md:justify-center gap-4 py-2">
           <div className="hover:scale-110 transition-all duration-500 shadow-[0_6px_10px_0_rgba(0,0,0,0.3)] rounded-full p-3 cursor-pointer">
             <a
