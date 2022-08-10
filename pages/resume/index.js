@@ -1,9 +1,11 @@
-import ResumePreview from "../../components/ResumePreview";
-
 const resume = () => {
   return (
-    <div className="w-full pt-20">
-      <ResumePreview />
+    <div className="w-screen h-screen pt-16">
+      <iframe
+        src="/assets/resume/myresume.pdf"
+        width={"100%"}
+        height={"100%"}
+      ></iframe>
     </div>
   );
 };
