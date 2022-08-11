@@ -31,7 +31,7 @@ const Contact = () => {
     await addDoc(collection(db, "contacts"), contactValues)
       .then(
         setContactValues({
-          fullName: "",
+          fullName: "hi",
           phone: "",
           email: "",
           message: "",
