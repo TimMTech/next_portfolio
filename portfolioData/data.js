@@ -37,10 +37,9 @@ export const data = {
       tech: "Next.js",
       imgUrl: nextIcon,
     },
-    { 
+    {
       tech: "Styled-Components",
-      imgUrl: styledImage
-
+      imgUrl: styledImage,
     },
     {
       tech: "Tailwind",
@@ -61,8 +60,8 @@ export const data = {
     },
     {
       tech: "Github",
-      imgUrl: githubImage
-    }
+      imgUrl: githubImage,
+    },
   ],
   projects: [
     {
@@ -80,6 +79,7 @@ export const data = {
       },
       live: "https://timmtech.github.io/shop-pc/",
       code: "https://github.com/TimMTech/shop-pc",
+      inDevelopment: false,
     },
     {
       projectName: "Eblog",
@@ -96,6 +96,7 @@ export const data = {
       },
       live: "",
       code: "https://github.com/TimMTech/mern-blog",
+      inDevelopment: true,
     },
     {
       projectName: "TM Portfolio",
@@ -112,12 +113,14 @@ export const data = {
       },
       live: "",
       code: "https://github.com/TimMTech/next_portfolio",
+      inDevelopment: false,
     },
     {
       projectName: "TechFlix",
       projectImage: movieImage,
       type: "Movie API",
-      description: "TechFlix was one of my earlier projects where I was just beginning to learn React JS framework.  This project was mostly focused on how to build Components in React, understand how props work and how to work with an API.  For the backend I used Node.js and built a server with the help of ExpressJS as the backend framework.  While learning how to build an application with React, at the same time I was learning how to build CSS components with Styled-Components CSS framework.  I enjoyed this project becuase it allowed me to broaden my knowledge in front-end with the integration of React framework, as well as how important a backend is when requesting data through an API.  This application is currently hosted on Github gh-pages.  However once more features are added and a database is implemented, I will be re-deploying this application with Netlify/Heroku.",
+      description:
+        "TechFlix was one of my earlier projects where I was just beginning to learn React JS framework.  This project was mostly focused on how to build Components in React, understand how props work and how to work with an API.  For the backend I used Node.js and built a server with the help of ExpressJS as the backend framework.  While learning how to build an application with React, at the same time I was learning how to build CSS components with Styled-Components CSS framework.  I enjoyed this project becuase it allowed me to broaden my knowledge in front-end with the integration of React framework, as well as how important a backend is when requesting data through an API.  This application is currently hosted on Github gh-pages.  However once more features are added and a database is implemented, I will be re-deploying this application with Netlify/Heroku.",
       tech: {
         framework: "React JS",
         database: "None",
@@ -127,6 +130,7 @@ export const data = {
       },
       live: "https://timmtech.github.io/movie-api/",
       code: "https://github.com/TimMTech/movie-api",
+      inDevelopment: true,
     },
   ],
 };

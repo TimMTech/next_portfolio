@@ -16,6 +16,7 @@ const Projects = () => {
               projectName,
               projectImage,
               tech: { framework },
+              inDevelopment
             } = project;
             return (
               <div
@@ -35,6 +36,7 @@ const Projects = () => {
                     <button className="hover:scale-110 transition-all duration-500 text-center tracking-wide px-3 py-2 mt-3 rounded-lg bg-white text-black font-bold text-lg cursor-pointer">
                       <NextLink href={`/project/${projectName}`}>More Info</NextLink>
                     </button>
+                    <p className="text-xl">{inDevelopment ? "In Development" : null}</p>
                   </div>
                 </div>
               </div>

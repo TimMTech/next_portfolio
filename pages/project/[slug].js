@@ -12,6 +12,7 @@ const project = ({ projects }) => {
           code,
           projectImage,
           description,
+          inDevelopment,
           tech: { framework, database, style, backend, backendFramework },
         } = project;
         return (
@@ -31,6 +32,7 @@ const project = ({ projects }) => {
               <h3>
                 {framework} / {database} / {style}
               </h3>
+              <p>{inDevelopment ? "In Development" : null}</p>
             </div>
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-5 gap-8 py-8">
               <div className="p-2 col-span-4">
