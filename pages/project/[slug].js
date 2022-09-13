@@ -18,12 +18,12 @@ const project = ({ projects }) => {
         return (
           <div key={index} className="w-screen relative h-[50vh]">
             <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/80 z-10" />
-            <div className=" h-[50vh]">
+            <div className=" h-[50vh] mt-16">
               <NextImage
                 src={projectImage}
                 quality={100}
-                objectFit="cover"
                 layout="fill"
+                objectFit="cover"
               />
             </div>
 

@@ -4,7 +4,7 @@ import {
   AiFillLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import NextLink from "next/link";
+
 
 const Hero = () => {
   return (

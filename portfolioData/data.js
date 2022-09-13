@@ -9,11 +9,11 @@ import mongodbIcon from ".//../public/assets/skills/mongodb.png";
 import nodeIcon from ".//../public/assets/skills/nodejs.png";
 import expressIcon from ".//../public/assets/skills/expressjs.png";
 import githubImage from ".//../public/assets/skills/github.png";
-import ecommerceImage from ".//../public/assets/projects/ecommerceImage.png";
-import blogImage from ".//../public/assets/projects/blogImage.png";
-import portfolioImage from ".//../public/assets/projects/portfolioImage.png";
-import movieImage from ".//../public/assets/projects/movieImage.png";
 
+import ecommerceImage from ".//../public/assets/projects/ecommerceHero.png";
+import blogImage from ".//../public/assets/projects/blogHero.png";
+import portfolioImage from ".//../public/assets/projects/portfolioHero.png";
+import movieImage from ".//../public/assets/projects/movieHero.png";
 
 export const data = {
   skills: [
