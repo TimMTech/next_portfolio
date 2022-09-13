@@ -94,9 +94,9 @@ export const data = {
         backendFramework: "Next.js",
         style: "Styled-components",
       },
-      live: "",
+      live: "https://mern-blog-five.vercel.app",
       code: "https://github.com/TimMTech/mern-blog",
-      inDevelopment: true,
+      inDevelopment: false,
     },
     {
       projectName: "TM Portfolio",
