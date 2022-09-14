@@ -3,7 +3,7 @@ import htmlIcon from ".//../public/assets/skills/html5.png";
 import cssIcon from ".//../public/assets/skills/css3.png";
 import reactIcon from ".//../public/assets/skills/react.png";
 import nextIcon from ".//../public/assets/skills/nextjs.png";
-import styledImage from ".//../public/assets/skills/styled.png"
+import styledImage from ".//../public/assets/skills/styled.png";
 import tailwindIcon from ".//../public/assets/skills/tailwind.png";
 import mongodbIcon from ".//../public/assets/skills/mongodb.png";
 import nodeIcon from ".//../public/assets/skills/nodejs.png";
@@ -91,7 +91,7 @@ export const data = {
         framework: "React JS",
         database: "MongoDB",
         backend: "Next.js",
-        backendFramework: "Next.js",
+        backendFramework: "",
         style: "Styled-components",
       },
       live: "https://www.etechblog.io/",
@@ -108,7 +108,7 @@ export const data = {
         framework: "React JS",
         database: "Firebase",
         backend: "Next.js",
-        backendFramework: "Next.js",
+        backendFramework: "",
         style: "Tailwind",
       },
       live: "https://tmportfolio.io",
@@ -123,7 +123,7 @@ export const data = {
         "TechFlix was one of my earlier projects where I was just beginning to learn React JS framework.  This project was mostly focused on how to build Components in React, understand how props work and how to work with an API.  For the backend I used Node.js and built a server with the help of ExpressJS as the backend framework.  While learning how to build an application with React, at the same time I was learning how to build CSS components with Styled-Components CSS framework.  I enjoyed this project becuase it allowed me to broaden my knowledge in front-end with the integration of React framework, as well as how important a backend is when requesting data through an API.  This application is currently hosted on Github gh-pages.  However once more features are added and a database is implemented, I will be re-deploying this application with Netlify/Heroku.",
       tech: {
         framework: "React JS",
-        database: "None",
+        database: "",
         backend: "Node.js",
         backendFramework: "Express",
         style: "Styled Components",
