@@ -63,26 +63,36 @@ const project = ({ projects }) => {
                     Technologies
                   </p>
                   <div className="grid grid-cols-3 md:grid-cols-1 text-lg font-semibold py-3">
-                    <div className="text-gray-600 py-2 flex items-center gap-2">
-                      <FaCog />
-                      {framework}
-                    </div>
-                    <div className="text-gray-600 py-2 flex items-center gap-2">
-                      <FaCog />
-                      {database}
-                    </div>
-                    <div className="text-gray-600 py-2 flex items-center gap-2">
-                      <FaCog />
-                      {style}
-                    </div>
-                    <div className="text-gray-600 py-2 flex items-center gap-2">
-                      <FaCog />
-                      {backend}
-                    </div>
-                    <div className="text-gray-600 py-2 flex items-center gap-2">
-                      <FaCog />
-                      {backendFramework}
-                    </div>
+                    {framework !== "" && (
+                      <div className="text-gray-600 py-2 flex items-center gap-2">
+                        <FaCog />
+                        {framework}
+                      </div>
+                    )}
+                    {database !== "" && (
+                      <div className="text-gray-600 py-2 flex items-center gap-2">
+                        <FaCog />
+                        {database}
+                      </div>
+                    )}
+                    {style !== "" && (
+                      <div className="text-gray-600 py-2 flex items-center gap-2">
+                        <FaCog />
+                        {style}
+                      </div>
+                    )}
+                    {backend !== "" && (
+                      <div className="text-gray-600 py-2 flex items-center gap-2">
+                        <FaCog />
+                        {backend}
+                      </div>
+                    )}
+                    {backendFramework !== "" && (
+                      <div className="text-gray-600 py-2 flex items-center gap-2">
+                        <FaCog />
+                        {backendFramework}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
