@@ -3,6 +3,7 @@ import NextImage from "next/image";
 import { FaCog } from "react-icons/fa";
 
 const project = ({ projects }) => {
+  console.log(projects)
   return (
     <div className="w-full">
       {projects.map((project, index) => {
@@ -91,6 +92,7 @@ const project = ({ projects }) => {
                       <div className="text-gray-600 py-2 flex items-center gap-2">
                         <FaCog />
                         {backendFramework}
+                        
                       </div>
                     )}
                   </div>
